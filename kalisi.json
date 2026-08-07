@@ -1,16 +1,16 @@
 {
-  "build": 4079,
-  "tag": "v4079",
-  "shackCommit": "abed06e3bd2c614377c210e80fd8e44556dfc566",
-  "engineCommit": "b3094512859cd47c167721ffbd389d74b1e21492",
-  "publishedAt": "1786135017671000000",
+  "build": 4081,
+  "tag": "v4081",
+  "shackCommit": "fc4c9732ba3d3cb7963250db6dfa852dd51ce276",
+  "engineCommit": "8a458bafcad0b10cade3145d04643b816fef2ace",
+  "publishedAt": "1786136017576000000",
   "artefacts": [
     {
       "platform": "darwin-arm64",
-      "url": "https://github.com/littleredshack/kalisi-binaries/releases/download/v4079/Kalisi-4079.dmg",
-      "bytes": 21289684,
-      "sha256": "f11284f17b55da6741e3301a0ab84737a3b1f74c7f6b4232ad025268458e917a",
-      "signature": "31a4791e8493d5c416d9fc7c097282096fcfd77750b5123ea5e4639ba8cafc3922d5a1bda6d1ff6e2c08282b7e92a8cfbc0b9d9eaf2d1bb7ee53f458b5b5a20e",
+      "url": "https://github.com/littleredshack/kalisi-binaries/releases/download/v4081/Kalisi-4081.dmg",
+      "bytes": 20926850,
+      "sha256": "a3f66715c1e9dd6c0af04010f3f56398a09787514ad6c6cd6ef443e9504aac58",
+      "signature": "5b006795b33f3ce090fef815585fa6f096da952095b8e3a752bd6f882561cae03f55c1dbb49eb4d6c41b96bf6447d8322190f0401d76aa8fc6c9f42424da5807",
       "signingKey": "26040279307c50ffcec9a70b3dd5d36f727af25b9573cfdf94d7e2d870426f62"
     }
   ],
