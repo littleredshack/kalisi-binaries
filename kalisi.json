@@ -1,0 +1,14 @@
+{
+  "build": 0,
+  "tag": "",
+  "shackCommit": "",
+  "engineCommit": "",
+  "publishedAt": "0",
+  "artefacts": [],
+  "unavailable": [
+    {
+      "platform": "all",
+      "reason": "no build published to this channel yet"
+    }
+  ]
+}
