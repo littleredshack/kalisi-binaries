@@ -1,7 +1,7 @@
 # Kalisi
 
-Build 4345. The download is the release asset for `v4345`:
+Build 4346. The download is the release asset for `v4346`:
 
-https://github.com/littleredshack/kalisi-binaries/releases/download/v4345/kalisi-mac-4345.dmg
+https://github.com/littleredshack/kalisi-binaries/releases/download/v4346/kalisi-mac-4346.dmg
 
 This repository is the update channel. The tree carries no product bytes — the artefact is a release asset, and the build number, byte length, digest, signature and signing key it is verified against are carried by the message of the commit that published it (`https://api.github.com/repos/littleredshack/kalisi-binaries/commits/main`).
