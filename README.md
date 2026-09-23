@@ -1,7 +1,7 @@
 # Kalisi
 
-Build 4993. The download is the release asset for `v4993`:
+Build 4994. The download is the release asset for `v4994`:
 
-https://github.com/littleredshack/kalisi-binaries/releases/download/v4993/kalisi-mac-4993.dmg
+https://github.com/littleredshack/kalisi-binaries/releases/download/v4994/kalisi-mac-4994.dmg
 
 This repository is the update channel. The tree carries no product bytes — the artefact is a release asset, and the build number, byte length, digest, signature and signing key it is verified against are carried by the message of the commit that published it (`https://api.github.com/repos/littleredshack/kalisi-binaries/commits/main`).
