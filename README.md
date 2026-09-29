@@ -1,7 +1,7 @@
 # Kalisi
 
-Build 5107. The download is the release asset for `v5107`:
+Build 5108. The download is the release asset for `v5108`:
 
-https://github.com/littleredshack/kalisi-binaries/releases/download/v5107/kalisi-mac-5107.dmg
+https://github.com/littleredshack/kalisi-binaries/releases/download/v5108/kalisi-mac-5108.dmg
 
 This repository is the update channel. The tree carries no product bytes — the artefact is a release asset, and the build number, byte length, digest, signature and signing key it is verified against are carried by the message of the commit that published it (`https://api.github.com/repos/littleredshack/kalisi-binaries/commits/main`).
