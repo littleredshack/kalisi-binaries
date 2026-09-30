@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Download Kalisi</title>
+<meta name="description" content="Download Kalisi for your computer.">
+<style>
+  :root {
+    --bg: #f7f6f3; --fg: #1c1b19; --muted: #6b6860; --line: #e2dfd8;
+    --card: #ffffff; --accent: #1f6f4a; --accent-fg: #ffffff;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0f1012; --fg: #ecebe7; --muted: #9a978f; --line: #26272b;
+      --card: #16171a; --accent: #3fa877; --accent-fg: #0b0c0d;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; min-height: 100vh; display: flex; align-items: center; justify-content: center;
+    background: var(--bg); color: var(--fg);
+    font: 16px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+  }
+  main { width: 100%; max-width: 480px; padding: 32px 16px; text-align: center; }
+  h1 { font-size: 32px; letter-spacing: -0.02em; margin: 0 0 8px; }
+  .lede { color: var(--muted); margin: 0 0 32px; }
+  .get {
+    display: inline-flex; flex-direction: column; align-items: center; gap: 2px;
+    min-width: min(280px, 100%); padding: 16px 28px; border-radius: 12px;
+    background: var(--accent); color: var(--accent-fg); text-decoration: none;
+    font-weight: 600; font-size: 18px;
+  }
+  .get small { font-weight: 400; font-size: 13px; opacity: 0.85; }
+  .get[aria-disabled="true"] { opacity: 0.5; pointer-events: none; }
+  .steps {
+    margin: 28px auto 0; padding: 16px 20px; max-width: 400px; text-align: left;
+    background: var(--card); border: 1px solid var(--line); border-radius: 12px; color: var(--muted);
+    font-size: 14px;
+  }
+  .steps ol { margin: 0; padding-left: 20px; }
+  .steps li + li { margin-top: 4px; }
+  .others { margin-top: 28px; font-size: 14px; color: var(--muted); }
+  .others a { color: var(--fg); }
+  .others span + span::before { content: " · "; }
+  .note { margin-top: 24px; font-size: 13px; color: var(--muted); }
+</style>
+</head>
+<body>
+<main>
+  <h1>Kalisi</h1>
+  <p class="lede">Your mail and your work, on your own computer.</p>
+
+  <a id="get" class="get" href="https://github.com/littleredshack/kalisi-binaries/releases/latest" aria-disabled="true">
+    <span id="get-label">Finding the right download…</span>
+    <small id="get-detail"></small>
+  </a>
+
+  <div id="steps" class="steps" hidden><ol id="steps-list"></ol></div>
+
+  <p id="others" class="others" hidden></p>
+  <p id="note" class="note"></p>
+</main>
+<script>
+  /* THE LATEST RELEASE OF THE CHANNEL, ASKED UNAUTHENTICATED: its assets are the downloads, one per platform,
+   * named kalisi-<platform>-<build>.<ext>. The visitor is offered the one for the machine they are on. */
+  const RELEASE = 'https://api.github.com/repos/littleredshack/kalisi-binaries/releases/latest';
+  const PLATFORMS = [
+    { word: 'mac', label: 'Download for Mac', detail: 'For Macs from 2021 onward', check: 'Not sure? Apple menu › About This Mac. If it shows Chip, this is for you.',
+      steps: ['Open the downloaded file.', 'Double-click Kalisi. It installs itself in Applications.', 'Kalisi opens in your browser.'] },
+    { word: 'windows', label: 'Download for Windows', detail: 'For Windows 10 and 11', check: '',
+      steps: ['Open the downloaded file and extract it.', 'Open Kalisi.exe.', 'Kalisi opens in your browser.'] },
+  ];
+
+  /* Which platform the visitor is on, from what the browser says of its machine: 'mac', 'windows' or null. */
+  function visitorPlatform() {
+    const said = (navigator.userAgentData && navigator.userAgentData.platform) || navigator.platform || navigator.userAgent;
+    if (/mac/i.test(said) && !/iphone|ipad/i.test(navigator.userAgent)) return 'mac';
+    if (/win/i.test(said)) return 'windows';
+    return null;
+  }
+
+  /* Shows the release: the visitor's download as the button, its steps, and every other platform the release carries below. */
+  function show(release) {
+    const offered = PLATFORMS.map((p) => ({
+      ...p,
+      asset: (release.assets || []).find((a) => a.name.startsWith(`kalisi-${p.word}-`)),
+    })).filter((p) => p.asset);
+    const mine = offered.find((p) => p.word === visitorPlatform());
+    const get = document.getElementById('get');
+    if (mine) {
+      get.href = mine.asset.browser_download_url;
+      get.removeAttribute('aria-disabled');
+      document.getElementById('get-label').textContent = mine.label;
+      document.getElementById('get-detail').textContent = mine.detail;
+      const list = document.getElementById('steps-list');
+      for (const s of mine.steps) list.appendChild(Object.assign(document.createElement('li'), { textContent: s }));
+      document.getElementById('steps').hidden = false;
+      document.getElementById('note').textContent = mine.check;
+    } else {
+      document.getElementById('get-label').textContent = 'No download for this computer yet';
+      document.getElementById('get-detail').textContent = offered.length ? 'Kalisi runs on the computers below.' : '';
+    }
+    const rest = offered.filter((p) => p !== mine);
+    if (rest.length) {
+      const others = document.getElementById('others');
+      others.append(mine ? 'Also for ' : '');
+      for (const p of rest) {
+        const span = document.createElement('span');
+        span.appendChild(Object.assign(document.createElement('a'), { href: p.asset.browser_download_url, textContent: p.detail }));
+        others.appendChild(span);
+      }
+      others.hidden = false;
+    }
+  }
+
+  fetch(RELEASE, { headers: { Accept: 'application/vnd.github+json' } })
+    .then((r) => (r.ok ? r.json() : Promise.reject(new Error(`GitHub answered ${r.status}`))))
+    .then(show)
+    .catch((e) => {
+      document.getElementById('get').removeAttribute('aria-disabled');
+      document.getElementById('get-label').textContent = 'See every download';
+      document.getElementById('note').textContent = `The list of downloads could not be read (${e.message}); the button opens it on GitHub.`;
+    });
+</script>
+</body>
+</html>
