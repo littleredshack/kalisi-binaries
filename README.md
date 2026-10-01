@@ -1,8 +1,8 @@
 # Kalisi
 
-Build 5256. The downloads are the release assets for `v5256`:
+Build 5258. The downloads are the release assets for `v5258`:
 
-https://github.com/littleredshack/kalisi-binaries/releases/download/v5256/kalisi-mac-5256.dmg
-https://github.com/littleredshack/kalisi-binaries/releases/download/v5256/kalisi-windows-5256.zip
+https://github.com/littleredshack/kalisi-binaries/releases/download/v5258/kalisi-mac-5258.dmg
+https://github.com/littleredshack/kalisi-binaries/releases/download/v5258/kalisi-windows-5258.zip
 
 This repository is the update channel. The tree carries no product bytes — the artefact is a release asset, and the build number, byte length, digest, signature and signing key it is verified against are carried by the message of the commit that published it (`https://api.github.com/repos/littleredshack/kalisi-binaries/commits/main`).
