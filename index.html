@@ -91,7 +91,8 @@
 </main>
 <script>
   /* THE LATEST RELEASE OF THE CHANNEL, ASKED UNAUTHENTICATED: each card's button is the asset for its platform,
-   * named kalisi-<platform>-<build>.<ext>; a platform the release does not carry keeps its card with the button off. */
+   * named kalisi-<platform>-<build>.<ext>, and says what the download weighs, rounded to the megabyte, as the release
+   * states the asset's size; a platform the release does not carry keeps its card with the button off. */
   fetch('https://api.github.com/repos/littleredshack/kalisi-binaries/releases/latest', {
     headers: { Accept: 'application/vnd.github+json' },
   })
@@ -102,6 +103,7 @@
         const get = card.querySelector('.get');
         if (asset) {
           get.href = asset.browser_download_url;
+          get.append(` · ${Math.round(asset.size / 1000000)} MB`);
           get.removeAttribute('aria-disabled');
         }
       }
