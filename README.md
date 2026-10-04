@@ -1,8 +1,8 @@
 # Kalisi
 
-Build 5325. The downloads are the release assets for `v5325`:
+Build 5327. The downloads are the release assets for `v5327`:
 
-https://github.com/littleredshack/kalisi-binaries/releases/download/v5325/kalisi-mac-5325.dmg — 31 MB
-https://github.com/littleredshack/kalisi-binaries/releases/download/v5325/kalisi-windows-5325.zip — 19 MB
+https://github.com/littleredshack/kalisi-binaries/releases/download/v5327/kalisi-mac-5327.dmg — 31 MB
+https://github.com/littleredshack/kalisi-binaries/releases/download/v5327/kalisi-windows-5327.zip — 18 MB
 
 This repository is the update channel. The tree carries no product bytes — the artefact is a release asset, and the build number, byte length, digest, signature and signing key it is verified against are carried by the message of the commit that published it (`https://api.github.com/repos/littleredshack/kalisi-binaries/commits/main`).
