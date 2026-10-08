@@ -1,8 +1,8 @@
 # Kalisi
 
-Build 5373. The downloads are the release assets for `v5373`:
+Build 5374. The downloads are the release assets for `v5374`:
 
-https://github.com/littleredshack/kalisi-binaries/releases/download/v5373/kalisi-mac-5373.dmg — 31 MB
-https://github.com/littleredshack/kalisi-binaries/releases/download/v5373/kalisi-windows-5373.zip — 19 MB
+https://github.com/littleredshack/kalisi-binaries/releases/download/v5374/kalisi-mac-5374.dmg — 31 MB
+https://github.com/littleredshack/kalisi-binaries/releases/download/v5374/kalisi-windows-5374.zip — 19 MB
 
 This repository is the update channel. The tree carries no product bytes — the artefact is a release asset, and the build number, byte length, digest, signature and signing key it is verified against are carried by the message of the commit that published it (`https://api.github.com/repos/littleredshack/kalisi-binaries/commits/main`).
