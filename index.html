@@ -26,7 +26,7 @@
   h1 { font-size: 36px; letter-spacing: -0.02em; margin: 0 0 8px; }
   .lede { color: var(--muted); margin: 0; }
   .cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
-  @media (max-width: 860px) { .cards { grid-template-columns: 1fr; } }
+  @media (max-width: 960px) { .cards { grid-template-columns: 1fr; } }
   .card {
     display: flex; flex-direction: column; gap: 16px; padding: 28px 24px;
     background: var(--card); border: 1px solid var(--line); border-radius: 16px;
@@ -36,7 +36,7 @@
   .card-head h2 { margin: 0; font-size: 22px; }
   .card-head p { margin: 0; color: var(--muted); font-size: 14px; }
   .get {
-    display: block; text-align: center; padding: 14px 20px; border-radius: 10px;
+    display: block; text-align: center; padding: 14px 12px; border-radius: 10px; white-space: nowrap; font-size: 15px;
     background: var(--accent); color: var(--accent-fg); text-decoration: none; font-weight: 600;
   }
   .get[aria-disabled="true"] { opacity: 0.5; pointer-events: none; }
