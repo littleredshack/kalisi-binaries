@@ -1,9 +1,9 @@
 # Kalisi
 
-Build 6262. The downloads are the release assets for `v6262`:
+Build 6263. The downloads are the release assets for `v6263`:
 
-https://github.com/littleredshack/kalisi-binaries/releases/download/v6262/kalisi-mac-6262.dmg — 31 MB
-https://github.com/littleredshack/kalisi-binaries/releases/download/v6262/kalisi-linux-6262.tar.gz — 19 MB
-https://github.com/littleredshack/kalisi-binaries/releases/download/v6262/kalisi-windows-6262.zip — 19 MB
+https://github.com/littleredshack/kalisi-binaries/releases/download/v6263/kalisi-mac-6263.dmg — 31 MB
+https://github.com/littleredshack/kalisi-binaries/releases/download/v6263/kalisi-linux-6263.tar.gz — 19 MB
+https://github.com/littleredshack/kalisi-binaries/releases/download/v6263/kalisi-windows-6263.zip — 19 MB
 
 This repository is the update channel. The tree carries no product bytes — the artefact is a release asset, and the build number, byte length, digest, signature and signing key it is verified against are carried by the message of the commit that published it (`https://github.com/littleredshack/kalisi-binaries/commits/main.atom`).
