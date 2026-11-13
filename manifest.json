@@ -1,44 +1,44 @@
 {
-  "build": 6483,
-  "shackCommit": "b191e82e0197d6130a091ad13e8b7261d9c20441",
-  "engineCommit": "b191e82e0197d6130a091ad13e8b7261d9c20441",
-  "cutAt": "2026-11-13T16:58:27.000000000Z",
-  "publishedAt": "1794589604219000000",
+  "build": 6486,
+  "shackCommit": "4da04f713ec09445ff01d6797b1c0b60b0cccc25",
+  "engineCommit": "4da04f713ec09445ff01d6797b1c0b60b0cccc25",
+  "cutAt": "2026-11-13T22:29:10.000000000Z",
+  "publishedAt": "1794609388058000000",
   "artefacts": [
     {
       "platform": "darwin-arm64",
-      "url": "https://github.com/littleredshack/kalisi-binaries/releases/download/v6483/kalisi-mac-6483.dmg",
-      "bytes": 31658106,
-      "sha256": "5a88555ae6530e9f0d4f85cbab433ffa1eebc29dc3d496fd8daa15b5a1ee97ed",
-      "signature": "4cb66f95b6ad2803924e1c97b91751bfc0d8f7ce24f82503af5a015c23645e14ae8a02cd3490def3a4c17b7ecf20dc47a463e6c058364eebc90a5d153d30210f",
-      "identitySignature": "a7af82095bae91f21f3b330fefb82666ca83f97a15789c923fb60c9b186b75cd5100978ae4581f46d0bfbeb2ca28fece76d017e0b69cfd883e05e13546c29603",
+      "url": "https://github.com/littleredshack/kalisi-binaries/releases/download/v6486/kalisi-mac-6486.dmg",
+      "bytes": 31658736,
+      "sha256": "e9cb0d8c70a859a97e459b24643db1d57409095784fa5a2c03fbb8ba208128ac",
+      "signature": "992f98003199b0404f1e91409c0322b4b0a2264edb0e1311ebeae456891253cb44c2b59a4c0935d0e58413189063e82a4b6be34cdd51e4334851c4d40755fe08",
+      "identitySignature": "f38c9325d9352e05ec4fa344a477bd226ce84306143c0f4815755796d07c67cd903bd6f727c00bf3f518157ba1e4144e8b42da847dcb19552ae15dbac821750e",
       "signingKey": "26040279307c50ffcec9a70b3dd5d36f727af25b9573cfdf94d7e2d870426f62"
     },
     {
       "platform": "darwin-x64",
-      "url": "https://github.com/littleredshack/kalisi-binaries/releases/download/v6483/kalisi-mac-6483.dmg",
-      "bytes": 31658106,
-      "sha256": "5a88555ae6530e9f0d4f85cbab433ffa1eebc29dc3d496fd8daa15b5a1ee97ed",
-      "signature": "2eb00a967dde30c24b671c73b89648deb64c70baadcce773fea63e08a96f2b89726a691d40c18db25c488ea581bacc7d95ddc67a569161b5aeb694edbedecf08",
-      "identitySignature": "a89c87f57c4252877cbe65cadaf8a7f89c5a5c4676208027906fbe4d7e8949039f911a015a69fdfe203105e220d3c72746d45d1218e2693c5f93d456d125e002",
+      "url": "https://github.com/littleredshack/kalisi-binaries/releases/download/v6486/kalisi-mac-6486.dmg",
+      "bytes": 31658736,
+      "sha256": "e9cb0d8c70a859a97e459b24643db1d57409095784fa5a2c03fbb8ba208128ac",
+      "signature": "9323886c620c4bc9871ff0a1d82bae6e90edd2ecc08a53752a3cebdbc07721c43f119ed562f8c5a1a96de14850f2242ac83c2f946c3cdfd0877969d00a74a00d",
+      "identitySignature": "d9b9477a56b751fd57e380a7ae74f6b83e4af38c141044ffc71c96983e665f470446eb6b0061b5edfc57f22f30a6b71c9fa7ce2610b55635f137273c9a4b0202",
       "signingKey": "26040279307c50ffcec9a70b3dd5d36f727af25b9573cfdf94d7e2d870426f62"
     },
     {
       "platform": "linux-x64",
-      "url": "https://github.com/littleredshack/kalisi-binaries/releases/download/v6483/kalisi-linux-6483.tar.gz",
-      "bytes": 19401912,
-      "sha256": "d56ea713303e602fd48e0d9e73ee9dcc0418b81ca2cfef3910cd49686e4527df",
-      "signature": "1ab47ca90bf862a03215817d08bf1482d3476c0a8a759201c09f448492f55bac49482a80a91bb25b49cef56d8dde36f78ab9a3d866d35c39d6652a012adc7003",
-      "identitySignature": "490da7735f5bf2923de559c9e74c827f32555c060f7be97d444164bfef7c4a1ab5b7d0d21261ff6843a14ba2ff87020b08319d8ac2ea8431d37467cb651cd907",
+      "url": "https://github.com/littleredshack/kalisi-binaries/releases/download/v6486/kalisi-linux-6486.tar.gz",
+      "bytes": 19402011,
+      "sha256": "7c5fb84714418529f3e5e1bf0e43293d8b648b4065ca9c2730c18b20461749f1",
+      "signature": "22a7cc23005e7ef1f13ab3ceb388d683b78466e2eecb07902d341abbabacd3c498e11cacb1a366af5b2137a1357f1a349b08b442402e2ded2c972a325c52e804",
+      "identitySignature": "32a7574d6bcaa32b524b494370f1fe3d0965e344bbe7bc5430a8958ee8f2b1147408d1a97274ce0bbe6046deebed1cad2a917551a9abc3d54be8da60ecd94b03",
       "signingKey": "26040279307c50ffcec9a70b3dd5d36f727af25b9573cfdf94d7e2d870426f62"
     },
     {
       "platform": "windows-x64",
-      "url": "https://github.com/littleredshack/kalisi-binaries/releases/download/v6483/kalisi-windows-6483.zip",
-      "bytes": 18989171,
-      "sha256": "7abd8a72665bcdc3130df02996921c93065dec72323e9c19fcf8364b69268252",
-      "signature": "7874da0212a2c59c33c8d96dd9bdc8d8ab136c8cb0f5ad5e8e207ebcd6aeaa6752ee6c15b6ce43f228c31e61486a7a1af0ed4f09b77a6233d0b573a08e101b0a",
-      "identitySignature": "1055b58630f44ff64446ac6adbd4441f06ff4b5812d56ac897dc59e993de8cd6358d3bb576c36668e11a17fe2e09c5fa8ef33ecdd8c2a166d050d9f3f4a8680f",
+      "url": "https://github.com/littleredshack/kalisi-binaries/releases/download/v6486/kalisi-windows-6486.zip",
+      "bytes": 18987349,
+      "sha256": "01ad362aebe1a82aafa287d2ce6f942a36c3579eea27414bd373e23dfe4b8a6e",
+      "signature": "dd9fc42a0a58192d7259805ef4e825fe763507df589a044a133515e84843e899d124a2f1f185a4bc8215c0ab92c3875be1d5f130609f550342068289a892150b",
+      "identitySignature": "b9166f869930f5f6b22ec5dad0c923f6fb8d5154eb367d7ed3f133571e8c306051722debb6f4511c0271c82913406cacfcbf1635d560f6770ce8a57b7b0e2104",
       "signingKey": "26040279307c50ffcec9a70b3dd5d36f727af25b9573cfdf94d7e2d870426f62"
     }
   ],
@@ -62,10 +62,10 @@
     {
       "canister": "5a14dd8e-71ae-50f1-ba82-c22b750d02df",
       "name": "analytics",
-      "signature": "1acec7451ae7559d7659d39538ffe58b42afb1203d2ae49d7a064fc56180e6de",
-      "sha256": "3988a09f9d7c54f88a5305e02340fa1e67955a25a87c6d5fb2d5872374d8a987",
-      "bytes": 1267622,
-      "url": "https://github.com/littleredshack/kalisi-binaries/releases/download/v6482/canister-analytics-1acec7451ae7559d.kpay"
+      "signature": "4ba407ec5ade691e40da4a781fe342278df819e1b8f34ba27bb19ed5daf1b40e",
+      "sha256": "8e4bd288ce0a721f00c5a3909b6b1c0daa3346b7a6c1aac596735a6d9434fc29",
+      "bytes": 1267829,
+      "url": "https://github.com/littleredshack/kalisi-binaries/releases/download/v6486/canister-analytics-4ba407ec5ade691e.kpay"
     },
     {
       "canister": "42313e80-e705-49e2-8d92-a69b0a910e14",
@@ -230,10 +230,10 @@
     {
       "canister": "f04ca6dd-9791-5eb9-b056-b8931d07292f",
       "name": "mail",
-      "signature": "f049653233178a090177d639052c7150e9c8b6c2aab9076c7f1654323c9772fc",
-      "sha256": "edc49b8bd17071240c2a8e707687743319eb263de07ffa6e1a935f81efdbf3c3",
-      "bytes": 523074,
-      "url": "https://github.com/littleredshack/kalisi-binaries/releases/download/v6482/canister-mail-f049653233178a09.kpay"
+      "signature": "1911787718889536bf0eb31cb4cc6ecf2e394487cc7b5a41ca7da6f19ee62baf",
+      "sha256": "a5f646761106d80595993ed8fb55fa6a4f5c3b157704b2f9d27e2f03e0fc4990",
+      "bytes": 526486,
+      "url": "https://github.com/littleredshack/kalisi-binaries/releases/download/v6486/canister-mail-1911787718889536.kpay"
     },
     {
       "canister": "9c4e9e53-1deb-5199-a3c1-d63c58433f0d",
