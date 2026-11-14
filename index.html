@@ -39,7 +39,6 @@
     display: block; text-align: center; padding: 14px 12px; border-radius: 10px; white-space: nowrap; font-size: 15px;
     background: var(--accent); color: var(--accent-fg); text-decoration: none; font-weight: 600;
   }
-  .get[aria-disabled="true"] { opacity: 0.5; pointer-events: none; }
   ol { margin: 0; padding-left: 20px; color: var(--muted); font-size: 14px; }
   li + li { margin-top: 4px; }
   footer { margin-top: 32px; text-align: center; color: var(--muted); font-size: 13px; }
@@ -63,7 +62,7 @@
           <p>Macs from 2015 onward</p>
         </div>
       </div>
-      <a class="get" href="https://github.com/littleredshack/kalisi-binaries/releases/latest" aria-disabled="true">Download for Mac</a>
+      <a class="get" href="https://github.com/littleredshack/kalisi-binaries/releases/download/v6512/kalisi-mac-6512.dmg">Download for Mac · 32 MB</a>
       <ol>
         <li>Open the downloaded file.</li>
         <li>Double-click Kalisi. It installs itself in Applications.</li>
@@ -79,7 +78,7 @@
           <p>Windows 10 and 11</p>
         </div>
       </div>
-      <a class="get" href="https://github.com/littleredshack/kalisi-binaries/releases/latest" aria-disabled="true">Download for Windows</a>
+      <a class="get" href="https://github.com/littleredshack/kalisi-binaries/releases/download/v6512/kalisi-windows-6512.zip">Download for Windows · 19 MB</a>
       <ol>
         <li>Open the downloaded file and choose Extract all.</li>
         <li>Open Kalisi.exe. If Windows says it protected your PC, choose More info, then Run anyway.</li>
@@ -96,7 +95,7 @@
           <p>64-bit Intel and AMD</p>
         </div>
       </div>
-      <a class="get" href="https://github.com/littleredshack/kalisi-binaries/releases/latest" aria-disabled="true">Download for Linux</a>
+      <a class="get" href="https://github.com/littleredshack/kalisi-binaries/releases/download/v6512/kalisi-linux-6512.tar.gz">Download for Linux · 19 MB</a>
       <ol>
         <li>Extract the downloaded file.</li>
         <li>Run Kalisi in the Kalisi folder.</li>
@@ -105,32 +104,7 @@
     </section>
   </div>
 
-  <footer id="build">Every download is on <a href="https://github.com/littleredshack/kalisi-binaries/releases/latest">GitHub</a>.</footer>
+  <footer>Build 6512. Every download is on <a href="https://github.com/littleredshack/kalisi-binaries/releases/tag/v6512">GitHub</a>.</footer>
 </main>
-<script>
-  /* THE LATEST RELEASE OF THE CHANNEL, ASKED UNAUTHENTICATED: each card's button is the asset for its platform,
-   * named kalisi-<platform>-<build>.<ext>, and says what the download weighs, rounded to the megabyte, as the release
-   * states the asset's size; a platform the release does not carry keeps its card with the button off. */
-  fetch('https://api.github.com/repos/littleredshack/kalisi-binaries/releases/latest', {
-    headers: { Accept: 'application/vnd.github+json' },
-  })
-    .then((r) => (r.ok ? r.json() : Promise.reject(new Error(`GitHub answered ${r.status}`))))
-    .then((release) => {
-      for (const card of document.querySelectorAll('[data-platform]')) {
-        const asset = (release.assets || []).find((a) => a.name.startsWith(`kalisi-${card.dataset.platform}-`));
-        const get = card.querySelector('.get');
-        if (asset) {
-          get.href = asset.browser_download_url;
-          get.append(` · ${Math.round(asset.size / 1000000)} MB`);
-          get.removeAttribute('aria-disabled');
-        }
-      }
-      const build = String(release.tag_name || '').replace(/^v/, '');
-      document.getElementById('build').prepend(`Build ${build}. `);
-    })
-    .catch(() => {
-      for (const get of document.querySelectorAll('.get')) get.removeAttribute('aria-disabled');
-    });
-</script>
 </body>
 </html>
