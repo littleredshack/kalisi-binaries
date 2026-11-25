@@ -1,9 +1,9 @@
 # Kalisi
 
-Build 6613. The downloads are the release assets for `v6613`:
+Build 6614. The downloads are the release assets for `v6614`:
 
-https://github.com/littleredshack/kalisi-binaries/releases/download/v6613/kalisi-mac-6613.dmg — 32 MB
-https://github.com/littleredshack/kalisi-binaries/releases/download/v6613/kalisi-linux-6613.tar.gz — 19 MB
-https://github.com/littleredshack/kalisi-binaries/releases/download/v6613/kalisi-windows-6613.zip — 19 MB
+https://github.com/littleredshack/kalisi-binaries/releases/download/v6614/kalisi-mac-6614.dmg — 32 MB
+https://github.com/littleredshack/kalisi-binaries/releases/download/v6614/kalisi-linux-6614.tar.gz — 19 MB
+https://github.com/littleredshack/kalisi-binaries/releases/download/v6614/kalisi-windows-6614.zip — 19 MB
 
 This repository, littleredshack/kalisi-binaries, is the update channel. The tree carries no product bytes — the artefact is a release asset, and the build number, byte length, digest, signature and signing key it is verified against stand in `manifest.json` beside this file, read at the head commit.
